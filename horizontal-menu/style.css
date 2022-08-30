@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+nav {
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+}
+
+/** MOBILE **/
+nav .mobile {
+  display: none;
+}
+
+nav .mobile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+nav .mobile .header .more button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+}
+
+nav .mobile .collapse {
+  display: none;
+}
+
+nav .logo {
+  min-width: 250px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #00c3ff;
+}
+
+/** DESKTOP VIEW **/
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  /* padding: 0 20px; */
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+  display: flex;
+}
+
+nav .desktop .secondary.mini {
+  display: none;
+}
+
+/** Min-Desktop **/
+@media screen and (max-width: 890px) {
+  nav .logo {
+    min-width: 100px;
+  }
+
+  nav .desktop .secondary.full {
+    display: none;
+  }
+
+  nav .desktop .secondary.mini {
+    display: block;
+  }
+
+  nav .desktop .secondary.mini .submenu {
+    background-color: black;
+    position: absolute;
+    display: none;
+    width: 200px;
+    right: 0;
+  }
+  nav .desktop .secondary.mini:hover .submenu {
+    display: block;
+  }
+}
+
+/** Mobile **/
+@media screen and (max-width: 500px) {
+  nav .desktop {
+    display: none;
+  }
+
+  nav .mobile {
+    display: block;
+  }
+}

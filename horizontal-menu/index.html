@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizontal Menu</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="mobile">
+      <div class="header">
+        <div class="logo">Logo</div>
+        <div class="more">
+          <button id="btn-more">
+            <span class="material-icons"> menu </span>
+          </button>
+        </div>
+      </div>
+
+      <div id="links" class="links collapse">
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Search</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+
+    <div class="desktop">
+      <div class="logo">Logo</div>
+
+      <div class="primary">
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="secondary full">
+        <a href="#">Search</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Login</a>
+      </div>
+
+      <div class="secondary mini">
+        <a href="#" class="more">More</a>
+        <div class="submenu">
+          <a href="#">Search</a>
+          <a href="#">Sign Up</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const btnMore = document.querySelector("#btn-more");
+    const links = document.querySelector("#links");
+
+    btnMore.addEventListener("click", (e) => {
+      links.classList.toggle("collapse");
+    });
+  </script>
+</body>
+
+</html>
