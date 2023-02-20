@@ -22,7 +22,8 @@ body {
   display: flex;
   flex-direction: column;
 
-  transition: all 0.3s ease;
+  transition: margin 0.3s ease, transform 0.3s ease;
+  /* transition: all 0.3s ease; */
   box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
     -5px 0 10px rgba(0, 0, 0, 0.1);
 }
