@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Dropdown Card</title>
+  </head>
+  <body>
+    <div class="bg-container"></div>
+
+    <!-- Search Task -->
+    <header>
+      <div class="search-container">
+        <span class="material-icons search-icon"> search </span>
+        <input
+          type="search"
+          name="search-input"
+          id="search-input"
+          class="search-input"
+          placeholder="Search..."
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="task-inputs-container">
+        <form id="" class="task-inputs-form">
+          <input
+            type="text"
+            name="task-title"
+            id="task-title"
+            class="task-inputs task-input-click"
+            placeholder="Title"
+          />
+          <textarea
+            name="task-desc"
+            id="task-desc"
+            rows="4"
+            cols="40"
+            placeholder="Description"
+          ></textarea>
+
+          <div class="task-date-container">
+            <label for="task-date">Due Date</label>
+            <input
+              type="date"
+              name="task-date"
+              id="task-date"
+              class="task-inputs"
+              placeholder="due"
+            />
+          </div>
+          <button type="submit" class="task-btn">Add</button>
+        </form>
+      </section>
+
+      <!-- Task Cards -->
+      <section class="cards-container">
+        <div class="card">
+          <span class="material-icons card-icon-tick"> check_circle </span>
+          <p class="card-title">Task 1</p>
+          <p class="card-description">
+            The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here'
+          </p>
+          <p class="card-due-date">Expires in 2 days</p>
+          <div class="card-options">
+            <span class="material-icons card-option-edit"> edit_note </span>
+            <span class="material-icons md-light card-option-delete">
+              delete
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="material-icons card-icon-tick"> check_circle </span>
+          <p class="card-title">Task 1</p>
+          <p class="card-description">
+            The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here'
+          </p>
+          <p class="card-due-date">Expires in 2 days</p>
+          <div class="card-options">
+            <span class="material-icons card-option-edit"> edit_note </span>
+            <span class="material-icons md-light card-option-delete">
+              delete
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="material-icons card-icon-tick"> check_circle </span>
+          <p class="card-title">Task 1</p>
+          <p class="card-description">
+            The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here'
+          </p>
+          <p class="card-due-date">Expires in 2 days</p>
+          <div class="card-options">
+            <span class="material-icons card-option-edit"> edit_note </span>
+            <span class="material-icons md-light card-option-delete">
+              delete
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Task Modal -->
+    <aside>
+      <section class="container-modal"></section>
+    </aside>
+
+    <script src="./styles.js"></script>
+  </body>
+</html>
