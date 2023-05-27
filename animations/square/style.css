@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: inline-block;
+  width: 1280px;
+  height: 720px;
+  background-color: #695497;
+  position: relative;
+}
+
+.square {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 40%;
+  left: 50px;
+  animation-name: throw;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes throw {
+  0% {
+    left: 50px;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    bottom: 60%;
+  }
+
+  100% {
+    left: 1080px;
+    transform: rotate(360deg);
+  }
+}

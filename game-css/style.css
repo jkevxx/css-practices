@@ -176,6 +176,9 @@ body {
   position: absolute;
   top: 12px;
   border-radius: 50%;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .head__eye--left {
@@ -186,6 +189,7 @@ body {
   right: 25px;
 }
 
+/* *** grass *** */
 .layer-3::after,
 .layer-5::after,
 .layer-7::after {
@@ -196,9 +200,9 @@ body {
   width: 100%;
   height: 40px;
   background: linear-gradient(135deg, #6aa067 25%, transparent 25%) -50px 0,
-    linear-gradient(-135deg, #6aa067 25%, transparent 25%) -50px 0;
-  /* linear-gradient(45deg, #6aa067 25%, transparent 25%),
-    linear-gradient(-45deg, #6aa067 25%, transparent 25%); */
+    linear-gradient(-135deg, #6aa067 25%, transparent 25%) -50px 0,
+    linear-gradient(45deg, #6aa067 25%, transparent 25%),
+    linear-gradient(-45deg, #6aa067 25%, transparent 25%);
 
   background-size: 40px 100px;
   background-position: 140px 0 0 30px 0;
@@ -221,4 +225,18 @@ body {
     linear-gradient(-45deg, #a6543d 25%, transparent 25%);
   background-size: 40px 100px;
   background-position: 140px 0 0 30px 0;
+}
+
+/* *** keyframes *** */
+
+@keyframes blink {
+  0% {
+    transform: scaleY(1);
+  }
+  5% {
+    transform: scaleY(0.2);
+  }
+  15% {
+    transform: scaleY(1);
+  }
 }
