@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        --color: red;
+      }
+
+      p {
+        color: var(--color);
+      }
+
+      a {
+        color: var(--color, orange);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      what is the font color of the hypertext link?
+     -->
+    <p>Paragraph</p>
+    <ul>
+      <li>
+        <a href="#">List item with a link</a>
+      </li>
+      <li>list item</li>
+    </ul>
+  </body>
+</html>

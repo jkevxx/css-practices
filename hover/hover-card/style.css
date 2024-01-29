@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hover-element {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.hover-element:hover .info {
+  display: block;
+}
