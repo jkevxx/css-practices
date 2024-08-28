@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltip</title>
+    <style>
+      .tooltip {
+        inset-area: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <button style="anchor-name: --anchor" popovertarget="tooltip">
+      <p aria-hidden="true">?</p>
+    </button>
+
+    <div id="tooltip" class="tooltip" style="position-anchor: --anchor" popover>
+      <p>Tooltip content</p>
+    </div>
+  </body>
+</html>
